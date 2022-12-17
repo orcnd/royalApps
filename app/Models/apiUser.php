@@ -117,9 +117,7 @@ class apiUser extends Model
 
     public static function deleteBook($id) {
         $response=self::request('books/'.$id,'delete');
-        echo '<pre>';print_r($response);exit;
         if ($response->successful()) {
-            var_dump($response->object());exit;
             return true;
         }
         return false;

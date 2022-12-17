@@ -8,6 +8,7 @@ Route::get('/', function () {
 });
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/profile', [App\Http\Controllers\HomeController::class, 'profile'])->name('profile');
 Route::get('/authors', [App\Http\Controllers\HomeController::class, 'authors'])->name('authors');
 Route::get('/author/{id}', [App\Http\Controllers\HomeController::class, 'viewAuthor'])->name('viewAuthor');
 Route::get('/deleteAuthor/{id}', [App\Http\Controllers\HomeController::class, 'deleteAuthor'])->name('deleteAuthor');

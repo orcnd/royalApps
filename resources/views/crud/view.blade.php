@@ -2,6 +2,13 @@
 
 @section('content')
 <div class="container">
+    @if (isset($title))
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h1>{{ $title }}</h1>
+        </div>
+    </div>
+    @endif
     @if (isset($buttons))
     <div class="row">
         <div class="col">

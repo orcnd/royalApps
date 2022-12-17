@@ -29,6 +29,21 @@ class HomeController extends Controller
         return view('home');
     }
 
+    public function profile()
+    {
+        $me=apiUser::user();   
+        return view('crud.view',[
+            'title'=>'User Profile',
+            'columns'=>[
+                'first_name'=>['text'=>'First Name','type'=>'text'],
+                'last_name'=>['text'=>'Last Name','type'=>'text'],
+                'email'=>['text'=>'E-Mail','type'=>'text'],
+                'gender'=>['text'=>'Gender','type'=>'text'],
+            ],
+            'data'=>$me,
+        ]);
+    }
+
     public function authors()
     {
         
