@@ -8,7 +8,7 @@ i put 2 minutes of caching to some functionalities to improve performance
 i used default laravel/ui views for login ui
 
 ## How to setup 
-- works on php8 and uses sqlite3, prepare working envoriment for it
+- works on php8 and uses sqlite3, prepare working environment for it
 - clone the repo
 - run `composer install` to install depencies 
 - run `npm run build` to install node modules 
