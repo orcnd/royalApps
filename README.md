@@ -1,5 +1,5 @@
 # Welcome 
-I'm orcun and this is sample project for royalApps assignment
+I'm orcun and this is sample project for working with rest api 
 
 ## How it works 
 this code uses laravel 9 + sqlite + bootstrap 5
